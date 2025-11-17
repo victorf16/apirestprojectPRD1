@@ -2,4 +2,8 @@
 $RESOURCE_GROUP_NAME='<Reource-Group-Name>'
 $APP_SERVICE_NAME='<App-Service-Name>'
 
+
 az webapp deploy --name $APP_SERVICE_NAME --resource-group $RESOURCE_GROUP_NAME --src-path "<PATH>"
+
+
+https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=openid%2Caspnetcore
