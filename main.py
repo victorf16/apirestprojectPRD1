@@ -10,7 +10,7 @@ continuosIntegrationTools = {
 
         "title": "Continuos Integration",
         "relevanceLevel":1,
-        "description": "Automate test and builds to increase efficiency."
+        "description": "Automate test and builds to increase efficiency BUIATHACA."
 
     },
 
@@ -57,4 +57,5 @@ async def get_integration_by_id(tool_id: int):
     if not tool:
         return {"error": "Tool not found"}
     return tool
+
 
