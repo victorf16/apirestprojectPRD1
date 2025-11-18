@@ -7,3 +7,7 @@ az webapp deploy --name $APP_SERVICE_NAME --resource-group $RESOURCE_GROUP_NAME 
 
 
 https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=openid%2Caspnetcore
+
+
+
+creating service principal and retrieving the client id $appId = az ad app create --display-name myApp11 --query appId -o tsv
