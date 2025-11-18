@@ -11,3 +11,12 @@ https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=o
 
 
 creating service principal and retrieving the client id $appId = az ad app create --display-name myApp11 --query appId -o tsv
+
+
+
+az ad sp create --id $appId 
+
+$subscriptionId="<SubscriptionId>
+$assigneeObjectId=<YourObjectId>
+$resourceGroupName="myResourceGroupprd"
+$webappName="apirestprojectprd"
