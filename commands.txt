@@ -20,3 +20,7 @@ $subscriptionId="<SubscriptionId>
 $assigneeObjectId=<YourObjectId>
 $resourceGroupName="myResourceGroupprd"
 $webappName="apirestprojectprd"
+
+
+
+az ad sp create-for-rbac --name "myApp" --role contributor --scopes /subscriptions/$subscriptionId/resourceGroups/$resourceGroupName/providers/Microsoft.Web/sites/$webappName --json-auth
